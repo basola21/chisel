@@ -4,7 +4,7 @@
 
 local M = {}
 
-local _cfg    = nil
+local _cfg = nil
 local _intent = nil
 local session = require("chisel.session")
 
@@ -49,9 +49,17 @@ end
 
 -- ── change navigation proxies ──────────────────────────────────────────────
 
-function M.next_change()   require("chisel.changes").next()   end
-function M.prev_change()   require("chisel.changes").prev()   end
-function M.accept_change() require("chisel.changes").accept() end
-function M.reject_change() require("chisel.changes").reject() end
+function M.next_change()
+	require("chisel.changes").next()
+end
+function M.prev_change()
+	require("chisel.changes").prev()
+end
+function M.accept_change()
+	require("chisel.changes").accept()
+end
+function M.reject_change()
+	require("chisel.changes").reject()
+end
 
 return M
